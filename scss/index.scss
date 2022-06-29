@@ -29,71 +29,136 @@
       background-color: gray;
     }
 
-    .inputs {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 300px;
-      margin: 0 auto;
+  }
+}
 
-      input {
-        display: block;
-        margin-bottom: 20px;
-        padding: 10px;
-        width: 100%;
-        border-radius: 8px;
-        border: 1px solid rgb(221, 221, 221);
-      }
 
-      .add {
-        width: 100px;
-        text-align: center;
-        padding: 10px 25px;
-        border: none;
-        border-radius: 8px;
+.HeaderContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px lightgray solid;
+}
+.HeaderContent a {
+  text-decoration: none;
+  color: black;
+}
+.container {
+  max-width: 1156px;
+  margin: 0 auto;
+}
+#nav ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+.navItem:first-child {
+  padding-right: 5px;
+  border-right: 2px lightgray solid;
+}
+.navItem:nth-child(2) {
+  padding-right: 5px;
+  border-right: 2px lightgray solid;
+}
 
-        &:hover {
-          background-color: rgb(187, 187, 187);
-        }
-      }
+.title {
+  text-align: center;
+}
+
+.booksList {
+  border-collapse: collapse;
+  width: 100%;
+
+  .task {
+    display: flex;
+    position: relative;
+    margin-bottom: 5px;
+
+    td {
+      padding: 8px 0;
     }
 
-    .booksList {
-      border-collapse: collapse;
-      width: 100%;
+    .del {
+      justify-items: flex-end;
+      position: absolute;
+      right: 0;
+      height: 100%;
+      padding: 0 20px;
+      border: none;
+      background-color: rgba(135, 152, 168, 0.699);
+      text-transform: uppercase;
 
-      .task {
-        display: flex;
-        position: relative;
-        margin-bottom: 5px;
-
-        td {
-          padding: 8px 0;
-        }
-
-        .del {
-          justify-items: flex-end;
-          position: absolute;
-          right: 0;
-          height: 100%;
-          padding: 0 20px;
-          border: none;
-          background-color: rgba(135, 152, 168, 0.699);
-          text-transform: uppercase;
-
-          &:hover {
-            background-color: rgb(187, 187, 187);
-          }
-        }
-      }
-
-      .task:nth-child(odd) {
-        background-color: #f2f2f2;
-
-        &:hover {
-          background-color: rgb(216, 216, 216);
-        }
+      &:hover {
+        background-color: rgb(187, 187, 187);
       }
     }
   }
+
+  .task:nth-child(odd) {
+    background-color: #f2f2f2;
+
+    &:hover {
+      background-color: rgb(216, 216, 216);
+    }
+  }
+}
+
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  margin: 50px auto 0;
+
+  input {
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid rgb(221, 221, 221);
+  }
+
+  .add {
+    width: 100px;
+    align-self: flex-end;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 8px;
+
+    &:hover {
+      background-color: rgb(187, 187, 187);
+    }
+  }
+}
+.contact-text {
+  margin: 50px auto 20px;
+  // text-align: center;
+  max-width: 400px;
+
+}
+
+.contactlist {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: justify;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.contactContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  border: 2px lightgray solid;
+  padding: 10px;
+}
+footer span {
+  margin-left: 20px;
 }
