@@ -1,27 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AWESOME-BOOKS</title>
-    <link rel="stylesheet" href="css/index.css">
-</head>
-<body>
-    <div class="Books">
-        <div class="container">
-            <h1 class="title">All awesome books</h1>
-            <table class="booksList" id="list"></table>
-            <hr class="tablehr">
-            <h2 class="title">Add a new book</h2>
-            <form class="inputs">
-                <input type="text" id="title" placeholder="title" name="title" required/>
-                <input type="text" id="Author" placeholder="Author" name="Author" required/>
-                <button class="add" type="button">Add</button>
-            </form>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <!--Header section-->
+    <header id="header">
+      <div class="container">
+        <div class="HeaderContent">
+          <a href="#" class="logo">Awesome Books</a>
+          <nav id="nav">
+            <ul class="navItems">
+              <li class="navItem"><span>List</span></li>
+              <li class="navItem"><span>Add new</span></li>
+              <li class="navItem"><span>Contact</span></li>
+            </ul>
+          </nav>
         </div>
-    </div>
+      </div>
+    </header>
+    <!--End of Header section-->
+    <!--List section-->
+    <section id="ListSection">
+      <div class="container">
+        <h1 class="title">All awesome books</h1>
+        <table class="booksList" id="list"></table>
+      </div>
+    </section>
+    <!--End of List section-->
+    <!--Add new section-->
+    <section class="AddNewSection">
+      <div class="container">
+        <h2 class="title">Add a new book</h2>
+        <form class="inputs">
+          <input
+            type="text"
+            id="title"
+            placeholder="title"
+            name="title"
+            required
+          />
+          <input
+            type="text"
+            id="Author"
+            placeholder="Author"
+            name="Author"
+            required
+          />
+          <button class="add" type="button">Add</button>
+        </form>
+      </div>
+    </section>
+    <!--End of Add new section-->
+    <!-- Contact section-->
     
+    <!--End of Contact section -->
     <script src="script/app.js" defer></script>
-</body>
+  </body>
 </html>
