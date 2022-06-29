@@ -26,7 +26,10 @@ To get a local copy of this project:
 Clone this repository or download the Zip folder:
 ```
 https://github.com/AACHOURMOHAMED/awesome-books.git
-```  
+``` 
+
+## Live demo
+https://aachourmohamed.github.io/awesome-books/
 
 ## Test
 To track linter errors locally follow these steps:  
@@ -48,6 +51,7 @@ Track JavaScript linter errors run:
 npx eslint .
 ```
 
+
 ## Authors
 
 👤 **AshourMohamed**
@@ -56,7 +60,16 @@ npx eslint .
 - Twitter: [@twitterhandle](https://twitter.com/MohamedAachour3)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/mohamed-aachour-25405b215)
 
+👤 **Tracey Kadenyi**
 
+- GitHub: [@TracK92](https://github.com/TracK92)
+- LinkedIn: [Tracey Kadenyi](https://www.linkedin.com/in/tracy-kadenyi-9bb90287)
+
+👤 **Aleksandra Ujvari**
+
+- GitHub: [@githubhandle](https://github.com/digia3d)
+- Twitter: [@twitterhandle](https://twitter.com/ujvari65)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/aleksandra-ujvari-85235a210/)
 
 ## 🤝 Contributing
 
