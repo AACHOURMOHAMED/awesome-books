@@ -201,3 +201,8 @@ footer .span {
 #AddNewSection.close {
   display: none;
 }
+
+.contentDate {
+  display: flex;
+  justify-content: end;
+}
