@@ -3,7 +3,7 @@ const author = document.querySelector('#Author');
 const taskDiv = document.querySelector('#list');
 const Add = document.querySelector('.add');
 
-class AwesomeBooks {
+export default class AwesomeBooks {
   constructor() {
     // Empty Array To store The Tasks
     this.arrayOfTasks = [];
@@ -106,40 +106,6 @@ class AwesomeBooks {
       }
     };
   }
-
-  // Add a single page navigation
-  handleSinglePageNavigation() {
-    this.navItems = Array.from(document.querySelectorAll('.navItem'));
-    const ListSection = document.querySelector('#ListSection');
-    const AddNewSection = document.querySelector('#AddNewSection');
-    const ContactSection = document.querySelector('#ContactSection');
-    this.navItems.forEach((index) => {
-      index.addEventListener('click', () => {
-        switch (index.classList[1]) {
-          case 'list':
-            ListSection.classList.add('active');
-            ListSection.classList.remove('close');
-            AddNewSection.classList.add('close');
-            ContactSection.classList.add('close');
-            break;
-          case 'AddNew':
-            ListSection.classList.remove('active');
-            ListSection.classList.add('close');
-            AddNewSection.classList.add('active');
-            AddNewSection.classList.remove('close');
-            break;
-          case 'contact':
-            ListSection.classList.add('close');
-            AddNewSection.classList.remove('active');
-            AddNewSection.classList.add('close');
-            ContactSection.classList.add('active');
-            ContactSection.classList.remove('close');
-            break;
-          default:
-        }
-      });
-    });
-  }
 }
 
 const books = new AwesomeBooks();
@@ -148,4 +114,3 @@ books.handlesubmit();
 books.getData();
 books.checkLocal();
 books.remover();
-books.handleSinglePageNavigation();
